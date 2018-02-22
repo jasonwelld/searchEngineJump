@@ -163,20 +163,20 @@
         // icon = {};
         var icon ={};
         icon = {
-          google:"https://www.gobaidugle.com/images/google.svg",
-          baidu:"https://www.gobaidugle.com/images/baidu.svg",
-          sogou:'https://www.gobaidugle.com/images/sogou.svg',
-          so:'https://www.gobaidugle.com/images/so.svg',
-          bing:'https://www.gobaidugle.com/images/bing.svg',
-          yahoo:'https://www.gobaidugle.com/images/yahoo.svg',
-          duckduckgo:'https://www.gobaidugle.com/images/duckduckgo.svg',
-          yandex:'https://www.gobaidugle.com/images/yandex.svg',
-          aol:'https://www.gobaidugle.com/images/aol.svg',
-          ask:'https://www.gobaidugle.com/images/ask.svg',
-          config:'https://www.gobaidugle.com/images/config.svg',
-          edit:"https://www.gobaidugle.com/images/edit.svg",
-          del:"https://www.gobaidugle.com/images/del.svg",
-          plus:"https://www.gobaidugle.com/images/plus.svg",
+          google:"//jasonwelld.github.io/searchEngineJump/images/google.svg",
+          baidu:"//jasonwelld.github.io/searchEngineJump/images/baidu.svg",
+          sogou:'//jasonwelld.github.io/searchEngineJump/images/sogou.svg',
+          so:'//jasonwelld.github.io/searchEngineJump/images/so.svg',
+          bing:'//jasonwelld.github.io/searchEngineJump/images/bing.svg',
+          yahoo:'//jasonwelld.github.io/searchEngineJump/images/yahoo.svg',
+          duckduckgo:'//jasonwelld.github.io/searchEngineJump/images/duckduckgo.svg',
+          yandex:'//jasonwelld.github.io/searchEngineJump/images/yandex.svg',
+          aol:'//jasonwelld.github.io/searchEngineJump/images/aol.svg',
+          ask:'//jasonwelld.github.io/searchEngineJump/images/ask.svg',
+          config:'//jasonwelld.github.io/searchEngineJump/images/config.svg',
+          edit:"//jasonwelld.github.io/searchEngineJump/images/edit.svg",
+          del:"//jasonwelld.github.io/searchEngineJump/images/del.svg",
+          plus:"//jasonwelld.github.io/searchEngineJump/images/plus.svg",
         };
 
         // 网页搜索列表
