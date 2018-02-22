@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name           searchEngineJump 搜索跳转精简迷你版
-// @author         NLF&锐经(修改) & iqxin(再修改) & jason(再修改)
-// @contributor    iqxin
+// @author         NLF&锐经(修改) & iqxin(再修改) & jasonwelld(再再修改)
+// @contributor    jasonwelld
 // @description    方便的在各个搜索引擎之间跳转,增加可视化设置菜单，能更友好的自定义设置，做到最大兼容性
 // @version        0.0.1
-// @created        2018-02-03
+// @created        2011-7-2
 // @lastUpdated    2018-02-21
 
-// @namespace      https://greasyfork.org/zh-CN/scripts/27752-searchenginejump
-// @homepage       https://github.com/qxinGitHub/searchEngineJump
+// @namespace      https://greasyfork.org/zh-CN/scripts/38748-searchenginejump
+// @homepage       https://github.com/jasonwelld/searchEngineJump
 
 // @icon           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFSElEQVR4nMWXX4hdVxXGf2vfe89kJg61ia0DYzMTMWnoQ0FJtKmtJsFixT8DBSmYtGMLgq0PCqMEKwmxYzSGyUPBB7XRNi0FC6JtwYovgcS0klJD8SHakoExYhLQFkwn9/aeOfv7fDi3SStJ5o4muN4O7L32b33rz94H/s8WS10cvR3yVQaY++wnkESkwDK2sMy1EwXDtzRRziBhu+dGDG48smSA5kUP//wmAFIkrNwiGMOsBzYAQwTzEEeBY8BJO1fYtF+4laGPv/i/Afz1C1sAYwngZiKmsDcDI0DrHUtL4DRwMGAmUnVcCtpHPsrQbS/1DZDe+VFHblKziIjYBjwD3Iu5ARBwBjgJnAkwMAa+z+ZZqXEX8VZg0T784aUDzH3uk0DtVQvlVsMjwGpMB3gauAu8ieB2YDPwxR5gF/gQ+MeoNUFzACI4d+imvgDOp0BVRWo2AW62eRi8wvY/wNtrgGhDL+7a/gIcBLYBu4HrsPdSzr8K/JlcLk2BaCQstSxN2VptuYO93an7WES0UyORGg1Wfu0QKivyQhfb56yhn4B3Ynew1kD1oDTfJF20vi8NYBvjMVubbWHrOdtPhwaAYPVvfs8Hf1u32bJbDtXVbgFvAj4AOgTGzhPhGMdV/wCvbtmAJSyttzRiuWv7CdttAlY/f/iimwdvfQGiAfmtczg/jnOJ8/txtRbnvgAu6FSPtg1AC3wGPAvgWGRYqiSowLwC1Ru4GoFyFPc3ZM8DfGPLB1jZXlhe74sS6AAc+O6vL+tg6LaX2LP/SSA6tkpcYeee36/0D/C7Ve9BwZs97iLMEMDAE5N07z1wSQebvl/y3KkAGDIUsrHpRp8ACeDGw38kZdPMPtrILhvZ1yZ5TZJxvnwuW40GzSSaDa1vJq1oJXVbKZ9qpv5qoO6Cqr5ULB+zfNrygOX7LS+PlCgeu+eimz/1w0yWaTTScIqYTEERcDoiXovFauddAAA22CeRDyKD/Bnkbd32PNgUj09S/GwrUMt+x14hiWVFI1LEVyPidggi4hfOnuv3nr8AEGC5sj1j+4TtAcu7i4HlDwLLqRawMmtmnidn6JYLGIa7C/mbwHeAgYATQexPjVCVxcZd7SUACDCEfRyznXoMr8Sawf4lcDdwI7AKWAdss/0r2dOyr6kFpCn7hiyPRlDY5mM7z10W4F1KFT+/p6ZwDkgT2HuN19Tz3yXWG+NnJ8uR9h0FSStSRAFBwAmbpu3xbP/T9rzkp2zvtt2RzcvfG15EAaC8/8m6FkgmpWdsTyD/COtv9esnj1haZXvEtiXP2d5jc6es+3qHv8/2uO1v2d4hedA2H/n2vxZX4LwS+78E1PcDqprAOPZao9Gxs5PNkc6dXUKnIuI1Z8+lRijLo8AR2+OWqeeBS8n7bE8bd2x4Zc97FwcAaP307vqyiXi7QzBi7OyXGel8GkJEBAFUWUREIXlnL/LCvgBheZ9h2lLHyvxp5rrFAZZiG3e16zliBm3vsD0lu6i5ja0awppWrjrKmeOPjAL/UQP/rf1h11BPJHckT/dkL+vDjeXC0pRy3qGcB22x9oHZKwcAcPTh5UimzrWnexGXlrCFlAvlakq5eiiX3eLtSXnFAABe3j1c/0PgTp1z77NUKmesjHMulKuttq9X/eq+sgAAx35wTZ0OqWNrWqr2KVelqoqcF3DOL1r5dStfHQCoW03K9ApuWrnam/PCnHN+StZDRHSK1jLgCnXBpeymr/8dS+SFbmH7eiu/TkQnNRrkqmL20XVXFwBg7QOzRASSsDJFaxndssPso+uu9tH92b8BowSyPc/iZtEAAAAASUVORK5CYII=
 
@@ -34,10 +34,10 @@
 
     function iqxinstart(){
         // 根据规则把搜索引擎列表插入到指定网站
-		var css ={};
+        var css ={};
         css = {
-			style:"float:left;margin-left:1px;z-index:100000;margin-top:1px;"
-		};
+           style:"float:left;margin-left:1px;z-index:100000;margin-top:1px;"
+        };
         var rules = [
             // 网页搜索/////////////第一个可以当模板看
             {name: "google网页搜索",// 你要加载的网站的名字(方便自己查找)
@@ -99,7 +99,7 @@
                     where: 'beforeBegin',
                 },
             },
-			{name: "360",
+            {name: "360",
                 url: /^https?:\/\/www\.so\.com\/s/i,
                 enabled: true,
                 engineList: 'web',
@@ -143,7 +143,7 @@
                     where: 'beforeBegin',
                 },
             },
-			{name: "ask",
+            {name: "ask",
                 url: /^https?:\/\/www\.ask\.com\/web\?q/i,
                 enabled: true,
                 engineList: 'web',
@@ -163,20 +163,20 @@
         // icon = {};
         var icon ={};
         icon = {
-            google:"https://www.gobaidugle.com/images/google.svg",
-            baidu:"https://www.gobaidugle.com/images/baidu.svg",
-            sogou:'https://www.gobaidugle.com/images/sogou.svg',
-			so:'https://www.gobaidugle.com/images/so.svg',
-			bing:'https://www.gobaidugle.com/images/bing.svg',
-			yahoo:'https://www.gobaidugle.com/images/yahoo.svg',
-			duckduckgo:'https://www.gobaidugle.com/images/duckduckgo.svg',
-			yandex:'https://www.gobaidugle.com/images/yandex.svg',
-			aol:'https://www.gobaidugle.com/images/aol.svg',
-			ask:'https://www.gobaidugle.com/images/ask.svg',
-			config:'https://www.gobaidugle.com/images/config.svg',
-            edit:"https://www.gobaidugle.com/images/edit.svg",
-            del:"https://www.gobaidugle.com/images/del.svg",
-			plus:"https://www.gobaidugle.com/images/plus.svg",
+          google:"https://www.gobaidugle.com/images/google.svg",
+          baidu:"https://www.gobaidugle.com/images/baidu.svg",
+          sogou:'https://www.gobaidugle.com/images/sogou.svg',
+          so:'https://www.gobaidugle.com/images/so.svg',
+          bing:'https://www.gobaidugle.com/images/bing.svg',
+          yahoo:'https://www.gobaidugle.com/images/yahoo.svg',
+          duckduckgo:'https://www.gobaidugle.com/images/duckduckgo.svg',
+          yandex:'https://www.gobaidugle.com/images/yandex.svg',
+          aol:'https://www.gobaidugle.com/images/aol.svg',
+          ask:'https://www.gobaidugle.com/images/ask.svg',
+          config:'https://www.gobaidugle.com/images/config.svg',
+          edit:"https://www.gobaidugle.com/images/edit.svg",
+          del:"https://www.gobaidugle.com/images/del.svg",
+          plus:"https://www.gobaidugle.com/images/plus.svg",
         };
 
         // 网页搜索列表
@@ -208,7 +208,7 @@
             url: 'https://cn.bing.com/search?q=%s',
             favicon: icon.bing,
         };
-		engineList.web[3] = {
+            engineList.web[3] = {
             name: '搜狗',
             url: 'https://www.sogou.com/web?query=%s',
             favicon: icon.sogou,
@@ -236,55 +236,55 @@
             favicon: icon.yandex,
             disable:true,
         };
-		engineList.web[8] = {
+        engineList.web[8] = {
             name: 'ask',
             url: 'https://www.ask.com/web?q=%s',
             favicon: icon.ask,
             disable:true,
         };
-		engineList.web[9] = {
+            engineList.web[9] = {
             name: 'aol',
             url: 'https://search.aol.com/aol/search?q=%s',
             favicon: icon.aol,
             disable:true,
         };
         var settingData = {
-            "message":"$相关说明$(status: 这个在将来或许很重要)..."+
-                    "(version: 若有新功能加入，靠这个版本号识别)..." +
-                    "(addSearchItems: 允许更新时，添加新的搜索到你的搜索列表，将来更新使用)..." +
-                    "(modifySearchItems: 允许更新时，修改你的搜索列表中的项目,将来更新使用)..." +
-                    "(connectToTheServer: 允许连接到我的服务器(更新列表，将图标转换为base64等),将来更新使用或永不使用)..." +
-                    "(closetext: 设置页面右上角的“关闭圆圈”是否显示。true显示，false隐藏)..." +
-                    "(newtab: 0为默认设置，1为新标签页打开)..." +
-					"(position: 搜索按钮排列方向，0为水平，1为默认竖排，切换后可以调整left和top值来适应页面)..." +
-					"(left: 搜索按钮到浏览器左边的距离)..." +
-					"(top: 搜索按钮到浏览器上面的距离)..." +
-                    "(foldlist: 折叠当前搜索分类列表。true为折叠，false为展开。)..." +
-					"(animation: 关闭搜索按钮动画。true显示，false隐藏)..." +
-                    "(setBtnOpacity: 搜索按钮的透明度.)..." +
-                    "(debug: debug模式，开启后，控制台会输出一些信息，“关闭并保存”按钮将不会在刷新页面)..." +
-                    "(fixedTop: 将搜索按钮固定。 true开启，false关闭)..." +
-                    "(engineDetails: 第一个值为分类列表标题名称，第二个值与enginelist相关联，必须匹配,第三个值true为显示列表，false为禁用列表。可以用它将分类列表按自己喜欢排序)..." +
-                    "(engineList: 各个搜索的相关信息)" +
-                    "(rules: 添加陌生搜索后，需要在此将此搜索的搜索样式插入到目标网页才可以显示按钮，同脚本中的rules设置相同。自带了aol搜索，可仿写)...",
-			"status":1,
-            "version":0.1,
-            "addSearchItems":true,
-            "modifySearchItems":true,
-            "connectToTheServer":true,
-            "closetext":false,
-            "newtab":0,
-			"position":1,
-			"left":1,
-			"top":10,
-            "foldlist":false,
-			"animation":true,
-            "setBtnOpacity":0.6,
-            "debug":false,
-            "fixedTop":true,
-            "engineDetails":[['网页', 'web',true]],
-            "engineList":{},
-            "rules":[{"name": "aol", "url": "/^https?:\\/\\/search\\.aol\\.com\\/aol\\/search/", "enabled": true, "engineList": "web","style": css.style, "insertIntoDoc": {"keyword": "//input[@name='q']", "target": "//body[@*]", "where": "beforeBegin"}}]
+          "message":"$相关说明$(status: 这个在将来或许很重要)..."+
+                  "(version: 若有新功能加入，靠这个版本号识别)..." +
+                  "(addSearchItems: 允许更新时，添加新的搜索到你的搜索列表，将来更新使用)..." +
+                  "(modifySearchItems: 允许更新时，修改你的搜索列表中的项目,将来更新使用)..." +
+                  "(connectToTheServer: 允许连接到我的服务器(更新列表，将图标转换为base64等),将来更新使用或永不使用)..." +
+                  "(closetext: 设置页面右上角的“关闭圆圈”是否显示。true显示，false隐藏)..." +
+                  "(newtab: 0为默认设置，1为新标签页打开)..." +
+                  "(position: 搜索按钮排列方向，0为水平，1为默认竖排，切换后可以调整left和top值来适应页面)..." +
+                  "(left: 搜索按钮到浏览器左边的距离)..." +
+                  "(top: 搜索按钮到浏览器上面的距离)..." +
+                  "(foldlist: 折叠当前搜索分类列表。true为折叠，false为展开。)..." +
+                  "(animation: 关闭搜索按钮动画。true显示，false隐藏)..." +
+                  "(setBtnOpacity: 搜索按钮的透明度.)..." +
+                  "(debug: debug模式，开启后，控制台会输出一些信息，“关闭并保存”按钮将不会在刷新页面)..." +
+                  "(fixedTop: 将搜索按钮固定。 true开启，false关闭)..." +
+                  "(engineDetails: 第一个值为分类列表标题名称，第二个值与enginelist相关联，必须匹配,第三个值true为显示列表，false为禁用列表。可以用它将分类列表按自己喜欢排序)..." +
+                  "(engineList: 各个搜索的相关信息)" +
+                  "(rules: 添加陌生搜索后，需要在此将此搜索的搜索样式插入到目标网页才可以显示按钮，同脚本中的rules设置相同。自带了aol搜索，可仿写)...",
+          "status":1,
+          "version":0.01,
+          "addSearchItems":true,
+          "modifySearchItems":true,
+          "connectToTheServer":true,
+          "closetext":false,
+          "newtab":0,
+          "position":1,
+          "left":1,
+          "top":10,
+          "foldlist":false,
+          "animation":true,
+          "setBtnOpacity":0.6,
+          "debug":false,
+          "fixedTop":true,
+          "engineDetails":[['网页', 'web',true]],
+          "engineList":{},
+          "rules":[{"name": "aol", "url": "/^https?:\\/\\/search\\.aol\\.com\\/aol\\/search/", "enabled": true, "engineList": "web","style": css.style, "insertIntoDoc": {"keyword": "//input[@name='q']", "target": "//body[@*]", "where": "beforeBegin"}}]
         };
 
         var getSettingData = GM_getValue("searchEngineJumpData");
@@ -509,7 +509,7 @@
             return false;
         }
 
-        // 保存指定对象相关数据
+         // 保存指定对象相关数据
         var data = (function () {
             //'use strict';
 
@@ -712,7 +712,7 @@
                 #sej-container {
                     display: block;
                     #position: absolute;
-					#position: fixed;
+                    #position: fixed;
                     z-index: 2;
                     padding: 1px 5px 1px 5px;
                     line-height: 1.5;
@@ -733,7 +733,7 @@
                     margin: 4px 0px 0 0;
                     border: none;
                     padding: 4px 4px;
-					text-align:center;
+                    text-align:center;
                     text-decoration: none;
                     font-weight:500;
                     color: #333 !important;
@@ -771,7 +771,7 @@
                     display: block;
                     padding-top: 4px;
                     padding-bottom: 4px;
-					width: 50px;
+                    width: 50px;
                 }
                 .sej-drop-list > .sej-engine:hover {
                     background-color: #DEEDFF;
@@ -787,7 +787,7 @@
                     vertical-align: text-bottom;
                 }
 
-				.sej-engine-icon-edit {
+                .sej-engine-icon-edit {
                     display: block;
                     width: 20px;
                     height: 20px;
@@ -837,7 +837,7 @@
                 }
             */
         }).cssText;
-   //     document.head.appendChild(globalStyle); 插入head和body之间 插入head中百度会不刷新url重置head,只能作为单独的部分插入页面
+        //document.head.appendChild(globalStyle); 插入head和body之间 插入head中百度会不刷新url重置head,只能作为单独的部分插入页面
            iTarget.parentNode.insertBefore(globalStyle, iTarget);
         // 列表对象
         function DropDownList(a, list) {
@@ -962,7 +962,7 @@
             var cName = item[0];
             var engines = [];
 
-            engineList[category].forEach(function (engine) {
+        engineList[category].forEach(function (engine) {
                 // 检测是否用搜索搜某一网站 site:xxx.xx
                 var engineUrl = engine.url;
                 var siteIndex = engineUrl.lastIndexOf("site");
@@ -1017,7 +1017,7 @@
         dropLists.forEach(function (item) {
             container.appendChild(item[0]);
             //document.body.appendChild(item[1]);插入head和body之间
-			iTarget.parentNode.insertBefore(item[1], iTarget);
+            iTarget.parentNode.insertBefore(item[1], iTarget);
             item[1].addEventListener('mousedown', mousedownhandler, true);
 
             new DropDownList(item[0], item[1]);
@@ -1093,10 +1093,10 @@
                 // input[range] 滑动条相关
                 that.rangeChange(true);
                 document.querySelector("#setBtnOpacityRange").addEventListener("input",that.rangeChange);
-				document.querySelector("#leftRange").addEventListener("input",that.rangeChange);
-				document.querySelector("#topRange").addEventListener("input",that.rangeChange);
+                document.querySelector("#leftRange").addEventListener("input",that.rangeChange);
+                document.querySelector("#topRange").addEventListener("input",that.rangeChange);
             },
-			//拖拽相关
+            //拖拽相关
             dragEvent: function(){
                 var that = this;
                 var odivsdrag = document.querySelectorAll(".drag");
@@ -1109,7 +1109,7 @@
                     odiv.addEventListener('dragend',that.domdropend, false);
                 });
             },
-			//按钮相关
+            //按钮相关
             addContent: function(){
                 var aPattern = '<span draggable="true" class="drag">' +
                                 '<span class="sej-engine"' +
@@ -1119,7 +1119,7 @@
                                 ' data-iqxinlink="$link$" ' +
                                 ' data-iqxintarget="$blank$" ' +
                                 ' data-iqxindisabled="$disabled$" ' +
-								' title="点击启用或者禁用或者拖拽排序" ' +
+                                ' title="点击启用或者禁用或者拖拽排序" ' +
                                 '><img src="$favicon$" class="sej-engine-icon" style="padding-bottom:3px;"/><span>$name$</span></span>' +
                                 ' <span class="iqxin-set-edit" title="编辑"><img class="sej-engine-icon-edit" src="' + icon.edit + '"/></span>' +
                                 ' <span class="iqxin-set-del" title="删除"><img class="sej-engine-icon-edit" src="' + icon.del + '"/></span>' +
@@ -1178,7 +1178,7 @@
 
                     oDivConStr +=  "" +
                         '<span class="iqxin-additem" title="添加新的搜索引擎">' +
-						    '<img class="sej-engine-icon" src="' + icon.plus + '">' +
+                        '<img class="sej-engine-icon" src="' + icon.plus + '">' +
                         '</span>' +
                 "";
 
@@ -1191,16 +1191,16 @@
                 var fixedTop_checked = getSettingData.fixedTop?"checked":"";
                 var debug_checked = getSettingData.debug?"checked":"";
                 var foldlist_checked = getSettingData.foldlist?"checked":"";
-				var closetext_checked = getSettingData.closetext?"checked":"";
-				var animation_checked = getSettingData.animation?"checked":"";
+                var closetext_checked = getSettingData.closetext?"checked":"";
+                var animation_checked = getSettingData.animation?"checked":"";
 
                 // 增加搜索列表
                 var nSearchList = document.createElement("div");
                 nSearchList.id = "nSearchList";
-				nSearchList.setAttribute("title","添加新的搜索列表");
+                nSearchList.setAttribute("title","添加新的搜索列表");
                 nSearchList.innerHTML = ""+
-				"<img class='sej-engine-icon' src='" + icon.plus + "'>" +
-				"";
+                "<img class='sej-engine-icon' src='" + icon.plus + "'>" +
+                "";
                 this.ele.appendChild(nSearchList);
 
                 // 添加按钮
@@ -1208,20 +1208,20 @@
                 btnEle.id = "btnEle";
 
                 var btnStr = "<div class='btnEleLayer'>" +
-                            "<span><a target='_blank' href='https://greasyfork.org/zh-CN/scripts/27752-searchenginejump'>油猴</a> <a target='_blank' href='https://github.com/qxinGitHub/searchEngineJump'>代码</a></span>" +
+                            "<span><a target='_blank' href='https://greasyfork.org/zh-CN/scripts/38748-searchenginejump'>油猴</a> <a target='_blank' href='https://github.com/jasonwelld/searchEngineJump'>代码</a></span>" +
                             "<span title='open newtab 是否采用新标签页打开的方式'>打开方式" +
                                 "<select id='iqxin-globalNewtab'>" +
                                     "<option value='globalDef'>默认页面</option>" +
                                     "<option value='globalNewtab'" + (getSettingData.newtab?"selected":"")  + ">新标签页</option>" +
                                 "</select>" +
                             "</span> " +
-							"<span title='搜索按钮排列方向'>方向" +
+                            "<span title='搜索按钮排列方向'>方向" +
                                 "<select id='iqxin-prefs-position'>" +
                                     "<option value='Horizontal'>水平</option>" +
                                     "<option value='vertical'" + (getSettingData.position?"selected":"")  + ">竖排</option>" +
                                 "</select>" +
                             "</span> " +
-							"<span id='xin-reset' title='慎点，出厂重置'>重置</span>" +
+                            "<span id='xin-reset' title='慎点，出厂重置'>重置</span>" +
                             "<span id='xin-modification' title='编辑分享自己的配置或清空配置'>配置</span>" +
                             "<span id='iqxin-debugS' title='对设置菜单有一定的影响'>" +
                                 "<label>调试<input id='iqxin-debug' type='checkbox' name='' " +
@@ -1233,12 +1233,12 @@
                                     foldlist_checked +
                                 " style='vertical-align:middle;'></label>" +
                             "</span>" +
-							"<span id='xin-closetext'>" +
+                            "<span id='xin-closetext'>" +
                                 "<label>隐藏文字<input id='iqxin-closetext' type='checkbox' name='' " +
                                     closetext_checked +
                                 " style='vertical-align:middle;'></label>" +
                             "</span>" +
-							"<span id='xin-animation'>" +
+                            "<span id='xin-animation'>" +
                                 "<label>开启动画<input id='iqxin-animation' type='checkbox' name='' " +
                                     animation_checked +
                                 " style='vertical-align:middle;'></label>" +
@@ -1249,10 +1249,10 @@
                                 " style='vertical-align:middle;'></label>" +
                             "</span>" +
                             "<span title='设置按钮透明度'>透明度 <input type='range' step='0.1'  min='0' max='1' value='"+ (getSettingData.setBtnOpacity) +"' id='setBtnOpacityRange'><i style='display:inline-block;width:2em;text-align:center;' class='iqxin-setBtnOpacityRangeValue' title='按钮显示透明度'></i></span>" +
-							"<span title='设置靠左宽度'>靠左 <input type='range' step='1'  min='0' max='95' value='"+ (getSettingData.left) +"' id='leftRange'><i style='display:inline-block;width:2em;text-align:center;' class='iqxin-leftRangeValue' title='设置靠左宽度'></i></span>" +
-							"<span title='设置靠上高度'>靠上 <input type='range' step='1'  min='0' max='50' value='"+ (getSettingData.top) +"' id='topRange'><i style='display:inline-block;width:2em;text-align:center;' class='iqxin-topRangeValue' title='设置靠上高度'></i></span>" +
-							"<span id='xin-save' title='save'>应用</span>" +
-						    "<span id='xin-save-close' title='save & close'>保存并关闭</span>" +
+                            "<span title='设置靠左宽度'>靠左 <input type='range' step='1'  min='0' max='95' value='"+ (getSettingData.left) +"' id='leftRange'><i style='display:inline-block;width:2em;text-align:center;' class='iqxin-leftRangeValue' title='设置靠左宽度'></i></span>" +
+                            "<span title='设置靠上高度'>靠上 <input type='range' step='1'  min='0' max='50' value='"+ (getSettingData.top) +"' id='topRange'><i style='display:inline-block;width:2em;text-align:center;' class='iqxin-topRangeValue' title='设置靠上高度'></i></span>" +
+                            "<span id='xin-save' title='save'>应用</span>" +
+                            "<span id='xin-save-close' title='save & close'>保存并关闭</span>" +
                             "</div>";
                 btnEle.innerHTML = btnStr;
                 this.ele.appendChild(btnEle);
@@ -1287,7 +1287,7 @@
                     style.display = "none";
                     document.body.style.overflow = "auto";
                 }, 500);
-				var elems = document.querySelectorAll('#settingLayerMask');
+                var elems = document.querySelectorAll('#settingLayerMask');
                 if (!elems) return;
                 console.log("elems: " + elems);
                 // return;
@@ -1447,7 +1447,7 @@
                     '</div>' +
                     '<div class="sejcon">' +
                         '<span class="iqxin-additem" title="添加新的搜索引擎">' +
-						    '<img class="sej-engine-icon" src="' + icon.plus + '">' +
+                            '<img class="sej-engine-icon" src="' + icon.plus + '">' +
                         '</span>' +
                     '</div>' +
                 "";
@@ -1782,7 +1782,7 @@
                 e.dataTransfer.dropEffect = 'move';
                // return false;
 
-				var _this = e.target;
+                var _this = e.target;
                 var that = _this.parentNode;
                 var pparentNode = that.parentNode;
 
@@ -1838,7 +1838,7 @@
             },
             domdrop:function (e) {
                 debug("拖拽结束");
-				//dragEl.style.transformOrigin = "top center";
+                //dragEl.style.transformOrigin = "top center";
                 //dragEl.style.animation = "sejopen 0.3s";
                 // 重新绑定拖拽事件
                 SEJsetting.prototype.dragEvent();
@@ -1896,13 +1896,13 @@
                     odombtn.style.backgroundSize = odombtn.value*100 +"% 100%";
                     document.querySelector(".iqxin-setBtnOpacityRangeValue").innerHTML = odombtn.value*100 +"%";
                     getSettingData.setBtnOpacity = odombtn.value;
-				var odomleft = document.querySelector("#leftRange");
-					odomleft.style.background = "-webkit-linear-gradient(left,#3ABDC1,#83e7ea) no-repeat, #fff";
+                var odomleft = document.querySelector("#leftRange");
+                    odomleft.style.background = "-webkit-linear-gradient(left,#3ABDC1,#83e7ea) no-repeat, #fff";
                     odomleft.style.backgroundSize = odomleft.value*1 +"% 100%";
                     document.querySelector(".iqxin-leftRangeValue").innerHTML = odomleft.value +"%";
                     getSettingData.left = odomleft.value;
-				var odomtop = document.querySelector("#topRange");
-					odomtop.style.background = "-webkit-linear-gradient(left,#3ABDC1,#83e7ea) no-repeat, #fff";
+                    var odomtop = document.querySelector("#topRange");
+                    odomtop.style.background = "-webkit-linear-gradient(left,#3ABDC1,#83e7ea) no-repeat, #fff";
                     odomtop.style.backgroundSize = odomtop.value*2 +"% 100%";
                     document.querySelector(".iqxin-topRangeValue").innerHTML = odomtop.value +"%";
                     getSettingData.top = odomtop.value;
@@ -1975,25 +1975,25 @@
 
                 // 新标签页全局设置
                 var onewtab = document.querySelector("#iqxin-globalNewtab").selectedIndex;
-				//折叠搜索分类
+                //折叠搜索分类
                 var foldlist = document.querySelector("#iqxin-foldlist").checked;
-				//隐藏按钮文字
+                //隐藏按钮文字
                 var closetext = document.querySelector("#iqxin-closetext").checked;
-				//开启动画
+                //开启动画
                 var animation = document.querySelector("#iqxin-animation").checked;
-				// 工具条方向设置
-				var position = document.querySelector("#iqxin-prefs-position").selectedIndex;
+                // 工具条方向设置
+                var position = document.querySelector("#iqxin-prefs-position").selectedIndex;
 
                 // 以防不测，重新获取本地配置文件
                 var getData = GM_getValue("searchEngineJumpData");
                 getData.newtab = onewtab;
-				getData.position = position;
+                getData.position = position;
                 getData.foldlist = foldlist;
-				getData.closetext = closetext;
-				getData.animation = animation;
+                getData.closetext = closetext;
+                getData.animation = animation;
                 getData.setBtnOpacity = getSettingData.setBtnOpacity;
                 getData.left = getSettingData.left;
-				getData.top = getSettingData.top;
+                getData.top = getSettingData.top;
                 getData.debug = document.querySelector("#iqxin-debug").checked;
                 getData.fixedTop = document.querySelector("#iqxin-fixedTop").checked;
                 getData.engineDetails = engineDetails;
@@ -2033,7 +2033,7 @@
                         "border-radius: 4px;" +
                         "position: absolute;" +
                         "min-width: 700px;" +
-						"width: 70%;" +
+                        "width: 70%;" +
                         "transition:0.5s;" +
                     "}" +
                     ".iqxin-items{" +
@@ -2050,13 +2050,13 @@
                         "box-sizing: border-box;" +
                     "}" +
                     ".iqxin-pointer-events," +
-					".sej-engine-icon," +
+                    ".sej-engine-icon," +
                     ".sej-engine-icon-edit," +
                     "#settingLayer .sej-engine *{" +
                         "pointer-events:none;" +
                     "}" +
                     ".sejtitle{" +
-					    "float:left;" +
+                        "float:left;" +
                         "text-align: center;" +
                         "padding: 58px 15px 2px 15px;" +
                         "cursor: pointer;" +
@@ -2113,7 +2113,7 @@
                         "color: #ef8957;" +
                     "}" +
                     "#btnEle>div{" +
-					    "width: 100%;" +
+                        "width: 100%;" +
                         "display:block;" +
                         "justify-content: space-around;" +
                         "border-radius: 4px;" +
@@ -2167,24 +2167,24 @@
                         "transform:scale(0);" +
                     "}" +
                     "#settingLayer .sejtitle:hover .iqxin-title-edit," +
-					"#settingLayer .sejtitle:hover .iqxin-set-title-del," +
-					"#settingLayer .sejcon:hover .iqxin-additem," +
+                    "#settingLayer .sejtitle:hover .iqxin-set-title-del," +
+                    "#settingLayer .sejcon:hover .iqxin-additem," +
                     "#settingLayer .sejcon>span:hover .iqxin-set-edit," +
-					"#settingLayer .sejcon>span:hover .iqxin-set-del{" +
+                    "#settingLayer .sejcon>span:hover .iqxin-set-del{" +
                         "visibility:visible;" +
                         "opacity:0.8;" +
                         "transform:scale(1);" +
                     "}" +
                     "#nSearchList {" +
-					   "opacity:0.3;" +
-					   "position:relative;" +
-					   "width: 50px;" +
-					   "margin: 20px 5px 20px 5px;" +
-					   "border-radius:4px;" +
-					   "cursor:pointer;" +
-					   "background:#fff;" +
+                        "opacity:0.3;" +
+                        "position:relative;" +
+                        "width: 50px;" +
+                        "margin: 20px 5px 20px 5px;" +
+                        "border-radius:4px;" +
+                        "cursor:pointer;" +
+                        "background:#fff;" +
                     "}" +
-					"#nSearchList:hover{" +
+                    "#nSearchList:hover{" +
                         "opacity:1;" +
                     "}" +
                     "#newSearchListBox," +
@@ -2307,16 +2307,16 @@
         };
 
         // 设置按钮相关：图标透明度 靠左宽度 靠上宽度 是否固定按钮 是否竖排还是水平排列搜索图标 是否开启动画 是否隐藏文字(当折叠搜索分类功能关闭时才能隐藏文字，避免隐藏搜索分类文字)
-		var setBtnStyle = document.createElement('style');
+        var setBtnStyle = document.createElement('style');
         setBtnStyle.type = 'text/css';
         setBtnStyle.textContent = "#sej-container{" +
                             "opacity:"+getSettingData.setBtnOpacity+";"+
-							"left:"+getSettingData.left+"%;"+
-							"top:"+getSettingData.top+"%;"+
-							(getSettingData.position?"width:50px;":"width:100%;") +
-							(getSettingData.fixedTop?"position:fixed;":"position:absolute;") +
-							(getSettingData.animation?"animation:sejopen 0.5s !important;":"") +
-							(getSettingData.closetext && !getSettingData.foldlist?"font-size:0;":"") +
+                            "left:"+getSettingData.left+"%;"+
+                            "top:"+getSettingData.top+"%;"+
+                            (getSettingData.position?"width:50px;":"width:100%;") +
+                            (getSettingData.fixedTop?"position:fixed;":"position:absolute;") +
+                            (getSettingData.animation?"animation:sejopen 0.5s !important;":"") +
+                            (getSettingData.closetext && !getSettingData.foldlist?"font-size:0;":"") +
                         "}" +
                         "#sej-container:hover{" +
                             "opacity:1;" +
@@ -2341,7 +2341,7 @@
 
                 var sej_save = document.querySelector("#xin-save");
                 var sej_save_close = document.querySelector("#xin-save-close");
-				var odombtn = document.querySelector("#setBtnOpacityRange");
+                var odombtn = document.querySelector("#setBtnOpacityRange");
                 var odomleft = document.querySelector("#leftRange");
                 var odomtop = document.querySelector("#topRange");
                 var sej_edit = document.querySelector("#xin-modification");
@@ -2349,8 +2349,8 @@
                 // sej_save.addEventListener("click",function(){sejSet.saveData();sejSet.hide();if(!getSettingData.debug)window.location.reload();});
                 sej_save.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
                 sej_save_close.addEventListener("click",function(){sejSet.saveData();sejSet.hide();sejSet.reloadSet();});
-				odombtn.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
-				odomleft.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
+                odombtn.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
+                odomleft.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
                 odomtop.addEventListener("click",function(){sejSet.saveData();sejSet.reloadSet();});
                 // sej_reset.addEventListener("click",function(){sejSet.reset();sejSet.hide();window.location.reload();});
                 sej_edit.addEventListener("click",function(){sejSet.editCodeBox();});
